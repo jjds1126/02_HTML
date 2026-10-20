@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 브라우저는 기본적으로 표에 테두리가 표현이 안됨-->
+    <style>
+        tadle{
+            border-collapse: collapse;
+            margin-bottom: 24px;
+        }
+
+        th,
+        td{
+            border: 1px solid #94a3b8;
+            padding: 6px 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <!-- 1행 -->
+    <tr>
+        <td>셀1</td>
+        <td>셀2</td>
+        <td>셀3</td>
+        <td>셀4</td>
+    </tr>
+
+    <!-- 2행 -->
+    <tr>
+        <td>셀5</td>
+        <td colspan="2">colspan="2" 영역</td>
+        <td>셀8</td>
+    </tr>
+
+    <!-- 3행 -->
+    <tr>
+        <td>셀9</td>
+        <td rowspan="2">rowspan="2" 영역</td>
+        <td>셀11</td>
+        <td>셀12</td>
+    </tr>
+
+    <!-- 4행 -->
+    <tr>
+        <td>셀13</td>
+        <td>셀15</td>
+        <td>셀16</td>
+    </tr>
+</table>
